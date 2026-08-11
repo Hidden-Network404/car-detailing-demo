@@ -1,19 +1,20 @@
 /* ============================================================
    DESIGN TOKENS
-   Palette: near-black "garage" background, graphite panels,
+   Palette: clean white/soft-grey background, light panels,
    wax-gold accent (the shine after a good detail job).
    Type: Barlow Condensed (display, automotive signage),
          Inter (body), JetBrains Mono (ticket/data labels).
    ============================================================ */
 :root {
-  --bg: #101114;
-  --panel: #191b1f;
-  --panel-alt: #1f2126;
-  --border: #2b2e34;
-  --text: #edeeef;
-  --muted: #9297a0;
-  --accent: #d4a017;
+  --bg: #fafaf9;
+  --panel: #ffffff;
+  --panel-alt: #f2f1ee;
+  --border: #e2e0da;
+  --text: #1c1c1a;
+  --muted: #6b6a64;
+  --accent: #b8860b;
   --accent-dim: #8a6c17;
+  --on-accent: #1c1c1a;
   --radius: 2px;
   --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
@@ -51,8 +52,8 @@ body::before {
   z-index: 0;
   background-image: repeating-linear-gradient(
     100deg,
-    rgba(255, 255, 255, 0.012) 0px,
-    rgba(255, 255, 255, 0.012) 1px,
+    rgba(0, 0, 0, 0.015) 0px,
+    rgba(0, 0, 0, 0.015) 1px,
     transparent 1px,
     transparent 3px
   );
@@ -65,7 +66,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 20;
-  background: rgba(16, 17, 20, 0.9);
+  background: rgba(250, 250, 249, 0.9);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
@@ -91,7 +92,7 @@ header {
   font-size: 0.78rem;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--bg);
+  color: var(--on-accent);
   background: var(--accent);
   border: none;
   border-radius: var(--radius);
@@ -162,7 +163,7 @@ header {
 
 .btn-primary {
   background: var(--accent);
-  color: var(--bg);
+  color: var(--on-accent);
   border-color: var(--accent);
   font-weight: 600;
 }
