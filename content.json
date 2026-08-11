@@ -1,0 +1,46 @@
+{
+  "business": {
+    "name": "NAME DETAILING",
+    "tagline": "Your car, looking and smelling brand new",
+    "city": "Edmonton, AB",
+    "about": "A couple sentences about the detailer: years of experience, what makes the work stand out, the general approach."
+  },
+  "contacts": {
+    "phone": "+1 (000) 000-0000",
+    "phoneDisplay": "+1 000 000 0000",
+    "telegram": "https://t.me/username",
+    "instagram": "https://instagram.com/username",
+    "whatsapp": "https://wa.me/10000000000"
+  },
+  "bookingForm": {
+    "enabled": false,
+    "botToken": "PASTE_BOT_TOKEN_HERE",
+    "chatId": "PASTE_CHAT_ID_HERE"
+  },
+  "services": [
+    {
+      "title": "Wash & Polish",
+      "desc": "Hand wash, deep wheel cleaning, and polish to a mirror shine.",
+      "price": "from $80"
+    },
+    {
+      "title": "Interior Detailing",
+      "desc": "Seats, carpets, headliner, and plastics. Stain and odor removal.",
+      "price": "from $120"
+    },
+    {
+      "title": "Paint Protection",
+      "desc": "Wax or ceramic coating applied for long-lasting paint protection.",
+      "price": "from $150"
+    }
+  ],
+  "gallery": [
+    { "type": "image", "src": "images/placeholder-1.jpg", "caption": "Before / After — job 1" },
+    { "type": "image", "src": "images/placeholder-2.jpg", "caption": "Before / After — job 2" },
+    { "type": "image", "src": "images/placeholder-3.jpg", "caption": "Before / After — job 3" }
+  ],
+  "reviews": [
+    { "name": "Client name", "text": "Review text about the quality of the work.", "rating": 5 },
+    { "name": "Client name", "text": "Review text about the quality of the work.", "rating": 5 }
+  ]
+}

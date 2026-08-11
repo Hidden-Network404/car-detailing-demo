@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Detailing</title>
+<meta name="description" content="Car detailing — contact, reviews, and photos/videos of completed work.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav class="nav wrap">
+    <div class="brand" id="brand">NAME<span>DETAILING</span></div>
+    <a class="nav-cta" id="nav-cta" href="#contact">Book now</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-eyebrow">Car detailing · <span id="hero-city">Edmonton, AB</span></div>
+    <h1>Your car,<br><em>shining</em> like new</h1>
+    <p class="hero-sub" id="hero-sub">Hand wash, polish, interior detailing, and paint protection. Careful, thorough work — with before/after photos of every job.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" id="hero-cta-primary" href="#contact">Book a detail</a>
+      <a class="btn btn-ghost" href="#gallery">See the work</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Services</div>
+        <h2>What's included</h2>
+      </div>
+    </div>
+    <div class="tickets" id="services-list"></div>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Portfolio</div>
+        <h2>Completed work</h2>
+      </div>
+    </div>
+    <div class="gallery-grid" id="gallery-list"></div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-tag">Reviews</div>
+        <h2>What clients say</h2>
+      </div>
+    </div>
+    <div class="reviews-grid" id="reviews-list"></div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="section-tag">Contact</div>
+    <h2>Ready to book?</h2>
+    <p class="contact-sub" id="contact-about">Message or call to set up a time and place that works for you.</p>
+    <div class="contact-actions" id="contact-actions"></div>
+
+    <form id="booking-form" class="booking-form">
+      <div class="form-row">
+        <label for="f-name">Name</label>
+        <input type="text" id="f-name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="f-contact">Phone or Telegram/Instagram</label>
+        <input type="text" id="f-contact" name="contact" required>
+      </div>
+      <div class="form-row">
+        <label for="f-message">What do you need done?</label>
+        <textarea id="f-message" name="message" rows="3"></textarea>
+      </div>
+      <!-- honeypot: hidden from real users, bots tend to fill every field -->
+      <div class="form-row form-honeypot" aria-hidden="true">
+        <label for="f-company">Company</label>
+        <input type="text" id="f-company" name="company" tabindex="-1" autocomplete="off">
+      </div>
+      <button type="submit" class="btn btn-primary" id="form-submit">Send request</button>
+      <p class="form-status" id="form-status"></p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div id="footer-text">© 2026 NAME DETAILING</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
