@@ -87,6 +87,38 @@ header {
 }
 .brand span { color: var(--accent); }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.lang-toggle {
+  display: flex;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.lang-toggle button {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: transparent;
+  border: none;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+.lang-toggle button + button { border-left: 1px solid var(--border); }
+
+.lang-toggle button.active {
+  color: var(--on-accent);
+  background: var(--accent);
+}
+
 .nav-cta {
   font-family: var(--font-mono);
   font-size: 0.78rem;
@@ -219,6 +251,90 @@ section {
 }
 
 /* ============================================================
+   STORY — the fundraiser narrative, WEM drop-off note, and
+   the two logistics notes. Reuses the panel/mono-label language
+   from the ticket and hero components.
+   ============================================================ */
+.story-body {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.story-text p {
+  color: var(--text);
+  font-size: 1.02rem;
+  margin-top: 14px;
+}
+.story-text p:first-child { margin-top: 0; }
+
+.wem-callout {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+
+.wem-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.wem-callout p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.notes-grid {
+  margin-top: 36px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.note {
+  border-top: 1px dashed var(--border);
+  padding-top: 16px;
+}
+
+.note-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.01em;
+}
+
+.note p {
+  color: var(--muted);
+  margin-top: 6px;
+  font-size: 0.92rem;
+}
+
+.mission-quote {
+  margin: 44px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid var(--border);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.15rem, 2.6vw, 1.5rem);
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  max-width: 32ch;
+}
+
+@media (max-width: 780px) {
+  .story-body { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
    SERVICES — styled as work-order tickets (signature element)
    ============================================================ */
 .tickets {
@@ -246,6 +362,26 @@ section {
   background-repeat: repeat-x;
 }
 
+.ticket-featured {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+.ticket-stamp {
+  position: absolute;
+  top: 18px;
+  right: -6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px dashed var(--accent);
+  border-radius: var(--radius);
+  padding: 3px 8px;
+  transform: rotate(3deg);
+}
+
 .ticket-no {
   font-family: var(--font-mono);
   font-size: 0.72rem;
@@ -261,10 +397,35 @@ section {
   margin-top: 10px;
 }
 
-.ticket p {
+.ticket-duration {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-top: 6px;
+}
+
+.ticket-desc {
+  list-style: none;
+  margin-top: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ticket-desc li {
   color: var(--muted);
-  margin-top: 10px;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  padding-left: 14px;
+  position: relative;
+}
+
+.ticket-desc li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
 }
 
 .ticket-price {
@@ -458,6 +619,8 @@ button:focus-visible {
 
 @media (max-width: 640px) {
   .nav { padding: 14px 16px; }
+  .nav-right { gap: 8px; }
+  .nav-cta { padding: 10px 12px; }
   .hero { padding: 60px 16px 50px; }
   section { padding: 50px 16px; }
 }

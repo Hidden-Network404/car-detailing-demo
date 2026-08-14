@@ -1,46 +1,240 @@
 {
-  "business": {
-    "name": "NAME DETAILING",
-    "tagline": "Your car, looking and smelling brand new",
-    "city": "Edmonton, AB",
-    "about": "A couple sentences about the detailer: years of experience, what makes the work stand out, the general approach."
-  },
+  "defaultLang": "uk",
+
   "contacts": {
-    "phone": "+1 (000) 000-0000",
-    "phoneDisplay": "+1 000 000 0000",
-    "telegram": "https://t.me/username",
-    "instagram": "https://instagram.com/username",
-    "whatsapp": "https://wa.me/10000000000"
+    "email": "b81110@gmail.com"
   },
+
   "bookingForm": {
     "enabled": false,
     "botToken": "PASTE_BOT_TOKEN_HERE",
     "chatId": "PASTE_CHAT_ID_HERE"
   },
-  "services": [
-    {
-      "title": "Wash & Polish",
-      "desc": "Hand wash, deep wheel cleaning, and polish to a mirror shine.",
-      "price": "from $80"
+
+  "gallery": [],
+  "reviews": [],
+
+  "i18n": {
+    "uk": {
+      "langName": "UA",
+      "nav": { "bookNow": "Записатися" },
+
+      "business": {
+        "name": "BUK DETAILING",
+        "city": "Едмонтон, Альберта"
+      },
+
+      "hero": {
+        "eyebrow": "Мобільний детейлінг",
+        "titleLine1": "Чистий салон,",
+        "titleEm": "футбольна мрія",
+        "sub": "Мобільний детейлінг салону авто в Едмонтоні. Уже пару десятків успішно виконаних робіт — акуратно, вручну, з увагою до деталей.",
+        "ctaPrimary": "Записатися",
+        "ctaSecondary": "Тарифи"
+      },
+
+      "mission": {
+        "tag": "Історія",
+        "heading": "Підтримайте молодого футболіста",
+        "paragraphs": [
+          "Мій син сам збирає гроші на оплату футбольної академії — $1,800 + футбольна форма.",
+          "Тому він займається мобільним детейлінгом салону авто — уже пару десятків успішно виконаних робіт.",
+          "Ви отримуєте чистий автомобіль, а він робить крок до своєї футбольної мрії."
+        ],
+        "quote": "Кожне замовлення допомагає йому оплатити футбольну академію та форму."
+      },
+
+      "wem": {
+        "label": "WEM · West Edmonton Mall",
+        "text": "Живете в районі WEM або плануєте шопінг? Залишайте авто нам на час покупок — заберете його вже чистим."
+      },
+
+      "notes": [
+        {
+          "title": "Живете не біля WEM?",
+          "text": "Привезу авто в будь-яке місце в Едмонтоні — лише +$10 зверху."
+        },
+        {
+          "title": "Потрібен invoice для бізнесу?",
+          "text": "Можемо надати інвойс для документального підтвердження витрат вашого бізнесу."
+        }
+      ],
+
+      "services": {
+        "tag": "Тарифи",
+        "heading": "Скільки коштує",
+        "items": [
+          {
+            "title": "Базове прибирання",
+            "duration": "До 3 годин роботи",
+            "desc": [
+              "Пилососить салон, сидіння, килимки та багажник",
+              "Миє та протирає панель, консоль і двері",
+              "Чистить підстаканники та вентиляційні отвори",
+              "Миє внутрішні вікна та дзеркала"
+            ],
+            "price": "$60"
+          },
+          {
+            "title": "Розширене прибирання",
+            "duration": "Усе з базового +",
+            "desc": [
+              "Хімія та виведення плям",
+              "Додаткове очищення забруднених поверхонь",
+              "Полірування окремих елементів",
+              "Чорніння гуми",
+              "Фінальне наведення блиску"
+            ],
+            "price": "$75",
+            "featured": true,
+            "featuredLabel": "Популярний"
+          }
+        ]
+      },
+
+      "gallerySection": {
+        "tag": "Портфоліо",
+        "heading": "Виконані роботи",
+        "empty": "Фото та відео виконаних робіт з'являться тут."
+      },
+
+      "reviewsSection": {
+        "tag": "Відгуки",
+        "heading": "Що кажуть клієнти",
+        "empty": "Відгуки клієнтів з'являться тут."
+      },
+
+      "contact": {
+        "tag": "Контакти",
+        "heading": "Готові записатися?",
+        "sub": "Напишіть на email, щоб домовитися про час і місце.",
+        "emailLabel": "Написати на email"
+      },
+
+      "form": {
+        "name": "Ім'я",
+        "contact": "Телефон або Telegram/Instagram",
+        "message": "Що потрібно зробити?",
+        "company": "Компанія",
+        "submit": "Надіслати запит",
+        "sending": "Надсилаємо…",
+        "thanks": "Дякуємо! Ми скоро з вами зв'яжемося.",
+        "error": "Щось пішло не так — напишіть, будь ласка, на email вище.",
+        "disabledNote": ""
+      },
+
+      "footer": "BUK DETAILING"
     },
-    {
-      "title": "Interior Detailing",
-      "desc": "Seats, carpets, headliner, and plastics. Stain and odor removal.",
-      "price": "from $120"
-    },
-    {
-      "title": "Paint Protection",
-      "desc": "Wax or ceramic coating applied for long-lasting paint protection.",
-      "price": "from $150"
+
+    "en": {
+      "langName": "EN",
+      "nav": { "bookNow": "Book now" },
+
+      "business": {
+        "name": "BUK DETAILING",
+        "city": "Edmonton, AB"
+      },
+
+      "hero": {
+        "eyebrow": "Mobile detailing",
+        "titleLine1": "A clean car,",
+        "titleEm": "a soccer dream",
+        "sub": "Mobile interior detailing in Edmonton. A couple dozen jobs completed so far — careful, hands-on work with attention to detail.",
+        "ctaPrimary": "Book now",
+        "ctaSecondary": "See pricing"
+      },
+
+      "mission": {
+        "tag": "The story",
+        "heading": "Support a young soccer player",
+        "paragraphs": [
+          "My son is raising money himself to pay for soccer academy — $1,800 plus a kit.",
+          "So he's doing mobile car interior detailing — a couple dozen jobs completed successfully so far.",
+          "You get a spotless car, and he gets one step closer to his soccer dream."
+        ],
+        "quote": "Every booking helps him pay for soccer academy and his kit."
+      },
+
+      "wem": {
+        "label": "WEM · West Edmonton Mall",
+        "text": "Near WEM, or planning a shopping trip? Leave your car with us while you shop — pick it up clean."
+      },
+
+      "notes": [
+        {
+          "title": "Not near WEM?",
+          "text": "I'll come to you anywhere in Edmonton — just +$10."
+        },
+        {
+          "title": "Need an invoice for your business?",
+          "text": "We can provide an invoice to document the expense for your business."
+        }
+      ],
+
+      "services": {
+        "tag": "Pricing",
+        "heading": "What it costs",
+        "items": [
+          {
+            "title": "Basic clean",
+            "duration": "Up to 3 hours of work",
+            "desc": [
+              "Vacuum interior, seats, mats and trunk",
+              "Wash and wipe down dash, console and doors",
+              "Clean cup holders and vents",
+              "Clean interior windows and mirrors"
+            ],
+            "price": "$60"
+          },
+          {
+            "title": "Advanced clean",
+            "duration": "Everything in Basic, plus",
+            "desc": [
+              "Stain treatment and chemical cleaning",
+              "Extra attention to heavily soiled areas",
+              "Spot polishing of trim",
+              "Tire dressing / blackening",
+              "Final shine finish"
+            ],
+            "price": "$75",
+            "featured": true,
+            "featuredLabel": "Popular"
+          }
+        ]
+      },
+
+      "gallerySection": {
+        "tag": "Portfolio",
+        "heading": "Completed work",
+        "empty": "Photos and videos of completed work will appear here."
+      },
+
+      "reviewsSection": {
+        "tag": "Reviews",
+        "heading": "What clients say",
+        "empty": "Client reviews will appear here."
+      },
+
+      "contact": {
+        "tag": "Contact",
+        "heading": "Ready to book?",
+        "sub": "Email to set up a time and place that works for you.",
+        "emailLabel": "Email us"
+      },
+
+      "form": {
+        "name": "Name",
+        "contact": "Phone or Telegram/Instagram",
+        "message": "What do you need done?",
+        "company": "Company",
+        "submit": "Send request",
+        "sending": "Sending…",
+        "thanks": "Thanks! We'll be in touch shortly.",
+        "error": "Something went wrong — please use the email above instead.",
+        "disabledNote": ""
+      },
+
+      "footer": "BUK DETAILING"
     }
-  ],
-  "gallery": [
-    { "type": "image", "src": "images/placeholder-1.jpg", "caption": "Before / After — job 1" },
-    { "type": "image", "src": "images/placeholder-2.jpg", "caption": "Before / After — job 2" },
-    { "type": "image", "src": "images/placeholder-3.jpg", "caption": "Before / After — job 3" }
-  ],
-  "reviews": [
-    { "name": "Client name", "text": "Review text about the quality of the work.", "rating": 5 },
-    { "name": "Client name", "text": "Review text about the quality of the work.", "rating": 5 }
-  ]
+  }
 }
